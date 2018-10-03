@@ -2,6 +2,7 @@
 [general]
 name=fgddemImporter
 qgisMinimumVersion=2.0.0
+qgisMaximumVersion=3.99
 description=Import JPGIS (GML) DEM files.
 version=0.15
 author=Minoru Akagi

@@ -11,7 +11,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-from PyQt4.QtCore import *
+from qgis.PyQt.QtCore import *
 import os, locale
 
 def name():
@@ -36,6 +36,9 @@ def authorName():
     return "Minoru Akagi"
 
 def classFactory(iface):
-    import fgddemImporter
-    return fgddemImporter.fgddemImporter(iface)
+    # import fgddemImporter
+    from .fgddemImporter import fgddemImporter
+
+    # return fgddemImporter.fgddemImporter(iface)
+    return fgddemImporter(iface)
 
